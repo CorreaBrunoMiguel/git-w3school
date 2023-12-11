@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Git Getting Started</h1>
+    <hr>
+    <h2>Git Install</h2>
+    <p>
+        You can download Git for free from the following website: <a href="https://www.git-scm.com/">GIT</a>.
+    </p>
+    <hr>
+    <h2>Using Git with Command Line</h2>
+    <p>
+        To start using Git, we are first going to open up our Command Shell. <br><br>
+        For Windows, you can use Git bash, wich comes included in Git for Windows. For MAc and Linux you can use the built-in terminal. <br><br>
+        The first thing we need to do, is to check if Git is properly installed:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <h4>
+                [user@localhost] $ <span>git --version</span>
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Configure Git</h2>
+    <p>
+        Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <h4>
+                [user@localhost] $ <span>git config --global user.name 'username'</span> <br>
+                [user@localhost] $ <span>git config --global user.email 'email'</span>
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        Change the user name and email address to your own. You will probably also want to use this when registering to GitHub later on.
+    </p>
+    <div class="nota">
+        <b>Note: </b>Use <b class="red">global</b> to set the username and email for <b>every repository</b> on your computer. If yoou want to set the username/email for just the current repo, you can remove <b class="red">global</b>.
+    </div>
+    <hr>
+    <h2>Creating Git Folder</h2>
+    <p>
+        Now, let's create a new folder for our project:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <h4>
+                [user@localhost] $ <span>mkdir myproject</span> <br>
+                [user@localhost] $ <span>cd myproject</span>
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        <b class="red">mkdir</b> <b>makes a new repository</b>. <br><br>
+        <b class="red">cd</b> <b>changes the current working repository.</b> <br><br>
+        Now that we are in the correct directory. We can start by initializing Git!
+    </p>
+    <div class="nota">
+        <b>Note:</b> If you already have a folder/directory you would like to use for Git: <br> Navigate to it in command line, or open it in you file explorer, right-click and select 'Git Bash here'
+    </div>
+    <hr>
+    <h2>Initialize Git</h2>
+    <p>
+        One you have navigate to the correct folder, you can initialize Git on that folder:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <h4>
+                [user@localhost] $ <span>git init</span>
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        You just created your first Git Repository!
+    </p>
+    <div class="nota">
+        <b>Note: </b>Git now Knows that it should watch the folder you initiated it on. <br><br>
+        Git creates a hidden folder to keep track of changes.
+    </div>
+    <button onclick="location = '02-new-file.html'" class="botoes">Next ></button>
+</body>
+</html>

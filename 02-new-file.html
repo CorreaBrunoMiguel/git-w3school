@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIT</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <h1>Git New Files</h1>
+    <hr />
+    <h2>Git Adding New Files</h2>
+    <p>
+      You just created you first local Git repo. But it's empty. <br /><br />
+      So let's add some files, or create a new file using your favorite text
+      editor. Then save or move it to the folder you just created. <br /><br />
+      For this example, I am going to use a simple HTML file like this:
+    </p>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <pre>
+                &lt;!DOCTYPE html>
+                &lt;html>
+                    &lt;head>
+                        &lt;title>Hello World!&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+
+                        &lt;h1>Hello world!&lt;/h1>
+                        &lt;p>This is the first file in my new Git Repo.&lt;/p>
+
+                    &lt;/body>
+                &lt;/html>
+            </pre
+        >
+      </fieldset>
+    </div>
+    <p>
+      And save it to our new folder as <b class="red">index.html</b>.
+      <br /><br />
+      Let's go back to the terminal and list the files in our current working
+      directory:
+    </p>
+    <div class="exemplo">
+      <h4>Example</h4>
+      <fieldset>[user@localhost] <span>ls</span></fieldset>
+    </div>
+    <p>
+      <b class="red">ls</b> will list the files in the directory. We can see
+      that <b class="red">index.html</b> is there. <br /><br />
+      Then we check the Git <b class="red">status</b> and see if it is a part of
+      our repo:
+    </p>
+    <div class="exemplo">
+        <h4>Example</h4>
+        <fieldset>[user@localhost] <span>git status</span></fieldset>
+    </div>
+    <p>
+        Now Git is <b>aware</b> of the file, but has not <b>added</b> it to our repository! <br><br>
+        Files in your Git repository folder can be in one of 2 states:
+        <ul>
+            <li>Tracked - files that Git knows about and are added to the repository</li>
+            <li>Untracked - files that are in your working directory, but not added to the repository</li>
+        </ul>
+        When you first add files to an empty repository, they are all untracked. To get Git to track them, you nedd to stage them, or add them to the staging environment. <br><br>
+        We will cover the staging environment in the next chapter.
+    </p>
+    <button onclick="location='03-staging.html'" class="botoes">Next ></button>
+  </body>
+</html>
