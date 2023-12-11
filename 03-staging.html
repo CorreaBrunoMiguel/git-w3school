@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <h1>Git Staging Environment</h1>
-    <hr>
+    <hr />
     <h2>Git Staging Environment</h2>
     <p>
-        One of the core functions of Git is the concepts of the Staging Environment, and the Commit.
+      One of the core functions of Git is the concepts of the Staging
+      Environment, and the Commit. <br /><br />
+      A you working, yu may be adding, editing and removing files. But whenever
+      you hit a milestone or finish a part oh the work, you should add the files
+      to a Staging Environment. <br /><br />
+      <b>Staged</b> files are files that are ready to be <b>commited</b> to the
+      repository you are working on. You will learn more about
+      <b class="red">commit</b> shortly. <br /><br />
+      For now, we are done working with <b class="red">index.html</b>. So we can
+      add it to the Staging Environment.
     </p>
-</body>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <h4>[user@localhost] <span>git add index.html</span></h4>
+      </fieldset>
+    </div>
+    <p>The file should be <b>Staged</b>. Let's check the status:</p>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <h4>[user@localhost] <span>git status</span></h4>
+      </fieldset>
+    </div>
+    <hr />
+    <h2>Git Add More tha One File</h2>
+    <p>
+      You can also stage more than one file at a time. Let's add 2 more files to
+      our working folder. Use the text editor again. <br /><br />
+      A <b class="red"> README.md </b> file that describe the repository
+      (recommended for all repositories):
+    </p>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <pre>
+                # hello-world
+                Hello World repository for Git tutorial
+                This is an example repository for the Git tutoial on 
+                https://www.w3schools.com
+
+                This repository is built step by step in the tutorial.
+            </pre
+        >
+      </fieldset>
+    </div>
+  </body>
 </html>
