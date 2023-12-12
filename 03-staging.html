@@ -53,8 +53,7 @@
                 https://www.w3schools.com
 
                 This repository is built step by step in the tutorial.
-        </pre
-        >
+        </pre>
       </fieldset>
     </div>
     <p>Abasic external style sheet (<b class="red">bluestyle.css)</b></p>
@@ -73,5 +72,42 @@
         </pre>
       </fieldset>
     </div>
+    <p>And update <b class="red">index.html</b> to includes the stylesheet:</p>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <pre>
+                &lt;!DOCTYPE html>
+                &lt;html>
+                &lt;head>
+                  &lt;title>Hello World!&lt;/title>
+                  <span style="background-color: beige;">&lt;link rel="stylesheet" href="bluestyle.css"></span>
+                &lt;/head>
+                &lt;body>
+                  
+                  &lt;h1>Hello world!&lt;/h1>
+                  &lt;p>This is the first file in my new Git Repo.&lt;/p>
+                  
+                &lt;/body>
+                &lt;/html> 
+        </pre>
+      </fieldset>
+    </div>
+    <p>
+      Now add all files in the current directory to the Staging Environment:
+    </p>
+    <div class="exemplo">
+      <h3>Example</h3>
+      <fieldset>
+        <h4>
+          [user@localhost] <span>
+            git add --all
+          </span>
+        </h4>
+      </fieldset>
+    </div>
+    <p>
+      Using <b class="red">--all</b> instead of individual filenames will <b class="red">stage</b> all changes (new, modified, and delete) files.
+    </p>
   </body>
 </html>
